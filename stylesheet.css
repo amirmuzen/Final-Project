@@ -639,12 +639,15 @@ header {
   flex-direction: column;
   align-items: center;
   position: relative;
-  text-align: center;
-  box-shadow: black;
-  background-color: whitesmoke;
-  border: 1px solid color black
 }
 
+.plan__top {
+  padding: 32px;
+  text-align: center;
+  border: solid 2px black;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
 
 .plan__name,
 .plan__price,
@@ -667,6 +670,119 @@ header {
   font-size: 20px;
 }
 
-.plan__top {
-  border: 3px solid color black;
+.plan__target {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
 }
+
+.plan__middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+  align-items: center;
+  border: 2px solid black;
+  width: 100%;
+  padding: 20px ;
+}
+
+.plan__feature  {
+padding-bottom: 10px;
+}
+
+.plan__bottom  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+  align-items: center;
+  border: 2px solid black;
+  width: 100%;
+  padding: 20px ;
+}
+
+.plan__button--personal  {
+  color: yellow;
+  background-color: green;
+  padding: 15px 50px;
+  border-radius: 50px;
+  border: solid 1px grey;
+  font-weight: 900;
+}
+
+.plan__button--personal:hover  {
+  color: yellow;
+  background-color:green;
+  font-weight: 900;
+  transform: scale(3);
+  border: 2px solid yellow;
+  transition: 300ms;
+}
+
+.plan__button--buisness  {
+  color: yellow;
+    background-color: orange;
+  padding: 15px 50px;
+  border-radius: 50px;
+  border: solid 1px grey;
+  font-weight: 900;
+}
+
+.plan__button--buisness:hover  {
+  color: yellow;
+  background-color: darkorange;
+  font-weight: 900;
+  transform: scale(3);
+  border: 2px solid yellow;
+  transition: 300ms;
+}
+
+
+.plan__button--enterprise  {
+    background-color: yellow;
+  padding: 15px 50px;
+  border-radius: 50px;
+  border: solid 1px grey;
+  font-weight: 900;
+}
+
+.plan__button--enterprise:hover  {
+  background-color: yellow;
+  font-weight: 900;
+  transform: scale(3);
+  border: 1px solid black;
+  transition: 300ms;
+}
+
+.plan__stripe--personal{
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    color: white;
+    background-color: darkgreen;
+    border-radius: 5px 5px 0 0 ;
+    top:9px;
+}
+
+.plan__stripe--buisness  {
+ position: absolute;
+    width: 99%;
+    height: 8px;
+    color: white;
+    background-color: orange;
+    border-radius: 5px 5px 0 0 ;
+    top:9px;
+}
+
+.plan__stripe--enterprise  {
+  position: absolute;
+    width: 99%;
+    height: 8px;
+    color: white;
+    background-color: yellow;
+    border-radius: 5px 5px 0 0 ;
+    top:9px;
+}
+
